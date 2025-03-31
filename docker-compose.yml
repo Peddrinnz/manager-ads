@@ -1,0 +1,12 @@
+services:
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ads
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: root
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./db:/var/lib/mysql

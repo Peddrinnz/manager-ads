@@ -10,6 +10,10 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = [
-        'cpf', 'name', 'date_of_birth',
+        'cpf', 'name', 'date_of_birth' => 'date',
     ];
+    public function classrooms()
+    {
+        return $this->belongsToMany(Classroom::class, 'classroom_student');
+    }
 }

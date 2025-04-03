@@ -12,4 +12,8 @@ class Classroom extends Model
     protected $fillable = [
         'num_class', 'semester', 'period_day',
     ];
+    public function students()
+    {
+        return $this->belongsToMany(Student::class, 'classroom_student');
+    }
 }

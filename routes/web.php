@@ -9,3 +9,6 @@ Route::get('/', function () {
 })->name('home');
 Route::resource('students', StudentController::class);
 Route::resource('classrooms', ClassroomController::class);
+Route::delete('/classrooms/{classroom}/students/{student}', 
+    [ClassroomController::class, 'removeStudent'])
+    ->name('classrooms.removeStudent');

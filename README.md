@@ -43,12 +43,14 @@ Observação: A estilização pode ser bootstrap ou algum framework CSS de prefe
 ```
 5. Instale as dependências do PHP dentro do contêiner, gere a chave e rode as migrations
 ```bash
-    docker-compose exec app composer install
-    docker-compose exec app php artisan key:generate
-    docker-compose exec app php artisan migrate
+    docker-compose exec app composer install (caso necessário)
+    php artisan migrate --seed
+    php artisan key:generate
+    php artisan migrate
 ```
 6. Instale as dependências e rode o projeto
 ```bash
     npm install
     php artisan serve
+    npm run dev
 ```

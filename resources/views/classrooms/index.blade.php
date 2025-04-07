@@ -19,7 +19,6 @@
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número</th>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Semestre</th>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Período</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Quant. Alunos</th>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ações</th>
                     </tr>
                 </thead>
@@ -29,7 +28,6 @@
                         <td class="px-6 py-4 whitespace-nowrap">{{ $classroom->num_class }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ $classroom->semester }}</td>
                         <td class="px-6 py-4 whitespace-nowrap">{{ $classroom->period_day }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap">{{ $classroom->students_count }}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                             <div class="flex space-x-2">
                                 <a href="{{ route('classrooms.show', $classroom->id) }}" class="text-blue-600 hover:text-blue-900" title="Detalhes">

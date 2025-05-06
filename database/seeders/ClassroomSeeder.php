@@ -24,19 +24,9 @@ class ClassroomSeeder extends Seeder
             'period_day' => 'Tarde',
         ]);
         Classroom::create([
-            'num_class' => '103',
-            'semester' => '2025-2',
-            'period_day' => 'Manhã',
-        ]);
-        Classroom::create([
             'num_class' => '104',
             'semester' => '2025-2',
             'period_day' => 'Noite',
-        ]);
-        Classroom::create([
-            'num_class' => '105',
-            'semester' => '2025-1',
-            'period_day' => 'Tarde',
         ]);
     }
 }

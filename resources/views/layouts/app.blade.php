@@ -34,7 +34,7 @@
     <script>
         document.querySelectorAll('form[method="POST"]').forEach(form => {
             form.addEventListener('submit', function(e) {
-                if (!confirm('Tem certeza que deseja remover este item?')) {
+                if (!confirm('Tem certeza que deseja executar esta ação?')) {
                     e.preventDefault();
                 }
             });
